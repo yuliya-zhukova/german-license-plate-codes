@@ -1,8 +1,11 @@
 import React from 'react';
 import { Button } from 'reactstrap';
+import * as data from 'german-license-plate-prefixes';
 
 import logo from './logo.svg';
 import './App.css';
+
+console.log(data.default);
 
 function App() {
   return (
