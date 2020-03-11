@@ -1,9 +1,10 @@
 import React from 'react';
 
-export function RenderRow() {
+export function RenderRow(props) {
     return (
       <div>
-        Hallo!
+        {props.cityCode}
+        {props.cityName}
       </div>
     );
 }
