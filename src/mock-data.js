@@ -9,6 +9,6 @@ export const data = [
     },
     {
       cityCode: "FFB",
-      cityName: "Fuerstenfeldbruck",
+      cityName: "Fürstenfeldbruck",
     }
   ];
