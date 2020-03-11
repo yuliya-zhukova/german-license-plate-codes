@@ -41,14 +41,12 @@ console.log(arrayData);
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
         <table>
           <tbody>
             {renderTableRow(codeName, cityName)}
             {renderTableRow(codeName2, cityName2)}
           </tbody>
         </table>
-      </header>
     </div>
   );
 }
