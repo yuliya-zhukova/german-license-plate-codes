@@ -1,5 +1,5 @@
-export const data = [
-    {
+export const data = [ 
+  {
       cityCode: "A",
       cityName: "Augsburg",
     },
@@ -10,5 +10,9 @@ export const data = [
     {
       cityCode: "FFB",
       cityName: "Fürstenfeldbruck",
+    },
+    {
+      cityCode: "M",
+      cityName: "München",
     }
   ];

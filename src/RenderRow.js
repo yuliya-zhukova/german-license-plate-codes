@@ -3,7 +3,7 @@ import React from 'react';
 export function RenderRow(props) {
     return (
       <div>
-        <table>
+        <table className="table table-striped">
           <tbody>
             <tr>
               <td class="code-column">{props.cityCode}</td>
