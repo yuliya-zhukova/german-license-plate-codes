@@ -13,10 +13,11 @@ export function RenderTable(props) {
             </tr>
           </thead>
           <tbody>
-            {RenderRow(props[0])}
-            {RenderRow(props[1])}
-            {RenderRow(props[2])}
-            {RenderRow(props[3])}
+            {
+              props.map(function (element) {
+                return RenderRow(element);
+              })
+            }
           </tbody>
         </table>
       </div>
