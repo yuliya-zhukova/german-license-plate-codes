@@ -14,8 +14,10 @@ export function RenderTable(props) {
           </thead>
           <tbody>
             {
-              props.map(function (element) {
-                return RenderRow(element);
+              props.data.map(function (element) {
+                return (
+                  <RenderRow data={element} />
+                );
               })
             }
           </tbody>

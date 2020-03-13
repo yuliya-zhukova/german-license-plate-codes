@@ -18,7 +18,8 @@ function App() {
 
   return (
     <div className="App">
-      {RenderTable(array)}
+
+      <RenderTable data={array} />
     </div>
   );
 }
