@@ -2,7 +2,7 @@ import React from 'react';
 import germanLicensePlatePrefixes from 'german-license-plate-prefixes';
 
 import './App.css';
-import { RenderTable } from './RenderTable';
+import { AreaList } from './AreaList';
 
 function objectToArray(obj) {
   return Object.keys(obj).map(function (key) {
@@ -19,7 +19,7 @@ function App() {
   return (
     <div className="App">
 
-      <RenderTable data={array} />
+      <AreaList data={array} />
     </div>
   );
 }

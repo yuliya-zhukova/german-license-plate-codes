@@ -1,6 +1,6 @@
 import React from 'react';
 
-export function RenderRow(props) {
+export function AreaListItem(props) {
     return (
         <tr key={props.code}>
           <td>{props.data.code}</td>

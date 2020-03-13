@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { RenderRow } from './RenderRow';
+import { AreaListItem } from './AreaListItem';
 
-export function RenderTable(props) {
+export function AreaList(props) {
     return (
       <div>
         <table className="table table-striped">
@@ -16,7 +16,7 @@ export function RenderTable(props) {
             {
               props.data.map(function (element) {
                 return (
-                  <RenderRow data={element} />
+                  <AreaListItem data={element} />
                 );
               })
             }
