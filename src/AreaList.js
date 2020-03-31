@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './AreaList.css';
+
 import { AreaListItem } from './AreaListItem';
 import { SearchField } from './SearchField';
 
@@ -7,7 +9,7 @@ export function AreaList(props) {
     return (
       <div>
         <SearchField />
-        <table className="table table-striped">
+        <table className="table table-striped region-list">
           <thead>
             <tr>
               <th className="code-column">City code</th>
