@@ -1,24 +1,25 @@
 import React from 'react';
-import * as data from 'german-license-plate-prefixes';
+import germanLicensePlatePrefixes from 'german-license-plate-prefixes';
 
 import './App.css';
+import { AreaList } from './AreaList';
 
-const codeName = 'A';
-const cityName = data.default[codeName];
+function objectToArray(obj) {
+  return Object.keys(obj).map(function (key) {
+    return {
+      code: key,
+      name: obj[key]
+    };
+  });
+}
 
 function App() {
+  const array = objectToArray(germanLicensePlatePrefixes);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <table>
-          <tbody>
-            <tr>
-              <td>{codeName}</td>
-              <td>{cityName}</td>
-            </tr>
-          </tbody>
-        </table>
-      </header>
+
+      <AreaList data={array} />
     </div>
   );
 }
