@@ -8,9 +8,13 @@ export default function AreaListItem(props: AreaListItemProps) {
   const { areaItem } = props;
 
   return (
-    <div>
-      <div>{areaItem.code}</div>
-      <div>{areaItem.name}</div>
-    </div>
+    <tr className="area__item">
+      <td className="area__code">
+        {areaItem.code}
+      </td>
+      <td className="area__name">
+        {areaItem.name}
+      </td>
+    </tr>
   );
 }
