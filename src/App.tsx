@@ -16,11 +16,13 @@ export default function App() {
 
   const areaList = objectToArray(germanLicensePlatePrefixes);
 
+  const areaSortList = areaList.sort((a: AreaItem, b: AreaItem) => (a.code > b.code ? 1 : -1));
+
   return (
     <div className="area">
       <h1>German license plate codes</h1>
       <SearchField />
-      <AreaList list={areaList} />
+      <AreaList list={areaSortList} />
     </div>
   );
 }
