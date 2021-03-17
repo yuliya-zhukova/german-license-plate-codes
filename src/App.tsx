@@ -8,10 +8,10 @@ import { AreaItem } from './types';
 import './App.scss';
 
 export default function App() {
-  const [newCode, setNewCode] = useState('');
+  const [newInput, setNewInput] = useState('');
 
   function searchArea(value: string) {
-    setNewCode(value);
+    setNewInput(value);
   }
 
   function objectToArray(obj: any): AreaItem[] {
@@ -25,14 +25,20 @@ export default function App() {
 
   const areaSortList = areaList.sort((a: AreaItem, b: AreaItem) => (a.code > b.code ? 1 : -1));
 
+  const newCode = new RegExp(`^${newInput}`, 'i');
+
+  const areaFilterableList = areaSortList.filter((item: AreaItem) => newCode.test(item.code));
+
   return (
     <div className="area">
       <h1>German license plate codes</h1>
       <SearchField
         handleInput={searchArea}
-        value={newCode}
+        value={newInput}
       />
-      <AreaList list={areaSortList} />
+      <AreaList
+        list={areaFilterableList}
+      />
     </div>
   );
 }
