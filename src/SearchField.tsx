@@ -1,14 +1,12 @@
-import { useState } from 'react';
-
 import { InputGroup, FormControl } from 'react-bootstrap';
 
-export default function SearchField() {
-  const [inputCode, setInputCode]: any[] = useState('');
+export default function SearchField(props: any) {
+  const { newValue } = props;
 
-  function hundleInput(event: any) {
+  function getInput(event: any): void {
     const { value } = event.target;
 
-    setInputCode(value);
+    props.handleInput(value);
   }
 
   return (
@@ -18,10 +16,11 @@ export default function SearchField() {
       </InputGroup.Prepend>
       <FormControl
         name="code"
+        maxLength={3}
         placeholder="Area code"
         aria-label="Area code"
-        onChange={hundleInput}
-        value={inputCode}
+        onChange={getInput}
+        value={newValue}
       />
     </InputGroup>
   );
