@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://src/AreaList.scss","webpack://src/App.scss"],"names":[],"mappings":"AACE,YACE,eAAgB,CCFpB,KACE,sCAAyC","file":"main.9d0bea51.chunk.css","sourcesContent":[".area {\n  &__item {\n    text-align: left;\n  }\n}\n","body {\n  font-family: Arial, Helvetica, sans-serif;\n}\n"]}
