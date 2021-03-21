@@ -1,5 +1,6 @@
 {
   "name": "german-license-plate-codes",
+  "homepage": "https://yuliya-zhukova.github.io/german-license-plate-codes",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
