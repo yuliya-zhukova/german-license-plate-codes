@@ -17,6 +17,9 @@ jobs:
         node-version: '12.x'
 
     - run: npm install
-    - run: |
-        git config user.name "Yuliya Zhukova" && git config user.email "zhkv.jl@gmail.com"
-        npm run deploy
+
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./build
