@@ -16,8 +16,8 @@ jobs:
       with:
         node-version: '12.x'
 
-    - run: git config user.name 'Yuliya Zhukova'
-    - run: git config user.email 'zhkv.jl@gmail.com'
+    - run: git config user.name "Yuliya Zhukova"
+    - run: git config user.email "zhkv.jl@gmail.com"
 
     - run: npm install
     - run: npm run deploy
