@@ -1,4 +1,4 @@
-import { InputGroup, FormControl } from 'react-bootstrap';
+import './SearchField.scss';
 
 export default function SearchField(props: any) {
   const { newValue } = props;
@@ -10,18 +10,19 @@ export default function SearchField(props: any) {
   }
 
   return (
-    <InputGroup className="mb-3">
-      <InputGroup.Prepend>
-        <InputGroup.Text>Search</InputGroup.Text>
-      </InputGroup.Prepend>
-      <FormControl
-        name="code"
-        maxLength={3}
-        placeholder="Area code"
-        aria-label="Area code"
-        onChange={getInput}
-        value={newValue}
-      />
-    </InputGroup>
+    <div className="plate">
+      <div className="plate__top">
+        <div className="plate__eu">D</div>
+        <input
+          className="plate__input"
+          name="code"
+          maxLength={3}
+          placeholder="XXX"
+          aria-label="Area code"
+          onChange={getInput}
+          value={newValue}
+        />
+      </div>
+    </div>
   );
 }
