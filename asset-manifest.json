@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/german-license-plate-codes/static/css/main.44eb3c00.chunk.css",
-    "main.js": "/german-license-plate-codes/static/js/main.cdd5171d.chunk.js",
-    "main.js.map": "/german-license-plate-codes/static/js/main.cdd5171d.chunk.js.map",
+    "main.css": "/german-license-plate-codes/static/css/main.afe3429a.chunk.css",
+    "main.js": "/german-license-plate-codes/static/js/main.e7e527c6.chunk.js",
+    "main.js.map": "/german-license-plate-codes/static/js/main.e7e527c6.chunk.js.map",
     "runtime-main.js": "/german-license-plate-codes/static/js/runtime-main.6e2d34a0.js",
     "runtime-main.js.map": "/german-license-plate-codes/static/js/runtime-main.6e2d34a0.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/german-license-plate-codes/static/css/2.4c97ca4f.chunk.css",
@@ -10,14 +10,14 @@
     "static/js/2.1da0f68e.chunk.js.map": "/german-license-plate-codes/static/js/2.1da0f68e.chunk.js.map",
     "index.html": "/german-license-plate-codes/index.html",
     "static/css/2.4c97ca4f.chunk.css.map": "/german-license-plate-codes/static/css/2.4c97ca4f.chunk.css.map",
-    "static/css/main.44eb3c00.chunk.css.map": "/german-license-plate-codes/static/css/main.44eb3c00.chunk.css.map",
+    "static/css/main.afe3429a.chunk.css.map": "/german-license-plate-codes/static/css/main.afe3429a.chunk.css.map",
     "static/js/2.1da0f68e.chunk.js.LICENSE.txt": "/german-license-plate-codes/static/js/2.1da0f68e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.6e2d34a0.js",
     "static/css/2.4c97ca4f.chunk.css",
     "static/js/2.1da0f68e.chunk.js",
-    "static/css/main.44eb3c00.chunk.css",
-    "static/js/main.cdd5171d.chunk.js"
+    "static/css/main.afe3429a.chunk.css",
+    "static/js/main.e7e527c6.chunk.js"
   ]
 }
