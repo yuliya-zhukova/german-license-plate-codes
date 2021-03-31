@@ -13,7 +13,14 @@ export default function AreaListItem(props: AreaListItemProps) {
         {areaItem.code}
       </td>
       <td className="area__name">
-        {areaItem.name}
+        <a
+          href={`https://en.wikipedia.org/wiki/${areaItem.name}`}
+          target="_blank"
+          rel="noreferrer"
+          className="area__link"
+        >
+          {areaItem.name}
+        </a>
       </td>
     </tr>
   );
