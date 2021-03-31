@@ -1,4 +1,10 @@
 .area {
+  margin: 50px auto;
+
+  &__title {
+    display: none;
+  }
+
   &__item {
     text-align: left;
   }
@@ -8,6 +14,18 @@
 
     &:hover {
       color: #000;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .area {
+    max-width: 900px;
+    margin-top: 100px auto;
+
+    &__title {
+      display: block;
+      text-align: center;
     }
   }
 }
