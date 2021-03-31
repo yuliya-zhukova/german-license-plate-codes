@@ -36,9 +36,9 @@ export default function App() {
         handleInput={searchArea}
         value={newInput}
       />
-      <AreaList
-        list={areaFilterableList}
-      />
+      {
+        newInput && <AreaList list={areaFilterableList} />
+      }
     </div>
   );
 }
