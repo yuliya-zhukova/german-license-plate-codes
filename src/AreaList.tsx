@@ -15,17 +15,7 @@ export default function AreaList(props: AreaListProps) {
   const { list } = props;
 
   return (
-    <Table striped bordered>
-      <thead>
-        <tr className="area__item">
-          <th className="area__code">
-            Code
-          </th>
-          <th className="area__name">
-            Name
-          </th>
-        </tr>
-      </thead>
+    <Table bordered>
       <tbody>
         {
           list.map((item: AreaItem) => (
