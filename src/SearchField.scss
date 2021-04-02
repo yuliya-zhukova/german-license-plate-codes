@@ -1,21 +1,22 @@
+$top-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+
 .plate {
-  width: 100%;
+  width: 320px;
   padding: 2px;
   border-radius: 12px;
-  margin-bottom: 20px;
+  margin: 20px auto;
   background-color: #fff;
-  box-shadow: 0 0 2px 2px #999;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15), 0 22px 30px rgba(0, 0, 0, 0.25);
 
   &__top {
     position: relative;
     display: flex;
     width: 100%;
     height: 75px;
-    border: 2px solid #000;
+    border: 2px solid #222;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-
+    box-shadow: $top-shadow;
 
     &::after {
       content: '';
@@ -25,8 +26,9 @@
       bottom: 0;
       left: 0;
       z-index: 1;
+      pointer-events: none;
       border-radius: 7px;
-      box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.5);
+      box-shadow: inset $top-shadow;
     }
   }
 
@@ -45,6 +47,7 @@
     width: 100%;
     border: none;
     outline: none;
+    color: #222;
     border-top-right-radius: 7px;
     border-bottom-right-radius: 7px;
     padding: 0 0 0 10px;
