@@ -31,14 +31,14 @@ export default function App() {
 
   return (
     <div className="area">
-      <h1>German license plate codes</h1>
+      <h1 className="area__title">German license plate codes</h1>
       <SearchField
         handleInput={searchArea}
         value={newInput}
       />
-      <AreaList
-        list={areaFilterableList}
-      />
+      {
+        newInput && <AreaList list={areaFilterableList} />
+      }
     </div>
   );
 }
