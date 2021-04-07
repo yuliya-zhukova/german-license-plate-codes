@@ -1,7 +1,7 @@
 $top-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 
 .plate {
-  width: 320px;
+  width: 100%;
   padding: 2px;
   border-radius: 12px;
   margin: 20px auto 30px;
@@ -35,7 +35,7 @@ $top-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 
   &__eu {
     position: relative;
-    width: 50px;
+    width: 15%;
     height: 100%;
     color: #fff;
     padding-top: 39px;
@@ -56,7 +56,7 @@ $top-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
     color: #222;
     border-top-right-radius: 7px;
     border-bottom-right-radius: 7px;
-    padding: 0 0 0 20px;
+    padding: 0 0 0 10px;
     font-size: 72px;
     text-transform: uppercase;
     text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
@@ -64,6 +64,29 @@ $top-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
     &::placeholder {
       color: #ccc;
       text-shadow: none;
+    }
+  }
+}
+
+@media (min-width: 500px) {
+  .plate {
+    width: 524px;
+
+    &__top {
+      height: 100px;
+    }
+
+    &__eu {
+      min-width: 45px;
+      max-width: 45px;
+      padding-top: 52px;
+      font-size: 24px;
+      background-position: 50% 9px;
+      background-size: 140%;
+    }
+
+    &__input {
+      font-size: 96px;
     }
   }
 }
