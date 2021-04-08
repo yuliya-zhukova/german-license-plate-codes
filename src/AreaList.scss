@@ -6,13 +6,20 @@
     margin-bottom: 40px;
   }
 
+  &__list {
+    padding: 10px 20px;
+  }
+
   &__item {
-    text-align: left;
-    background-color: #fff;
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+    font-size: 24px;
   }
 
   &__code {
-    width: 30%;
+    width: 25%;
+    text-align: left;
   }
 
   &__link {
@@ -26,7 +33,7 @@
 
 @media (min-width: 1000px) {
   .area {
-    max-width: 900px;
+    max-width: 524px;
     margin-top: 100px auto;
 
     &__title {

@@ -8,11 +8,11 @@ export default function AreaListItem(props: AreaListItemProps) {
   const { areaItem } = props;
 
   return (
-    <tr className="area__item">
-      <td className="area__code">
+    <li className="area__item">
+      <div className="area__code">
         {areaItem.code}
-      </td>
-      <td className="area__name">
+      </div>
+      <div className="area__name">
         <a
           href={`https://en.wikipedia.org/wiki/${areaItem.name}`}
           target="_blank"
@@ -21,7 +21,7 @@ export default function AreaListItem(props: AreaListItemProps) {
         >
           {areaItem.name}
         </a>
-      </td>
-    </tr>
+      </div>
+    </li>
   );
 }

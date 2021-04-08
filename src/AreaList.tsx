@@ -15,14 +15,12 @@ export default function AreaList(props: AreaListProps) {
   const { list } = props;
 
   return (
-    <Table bordered>
-      <tbody>
-        {
-          list.map((item: AreaItem) => (
-            <AreaListItem key={item.code} areaItem={item} />
-          ))
-        }
-      </tbody>
-    </Table>
+    <ul className="area__list">
+      {
+        list.map((item: AreaItem) => (
+          <AreaListItem key={item.code} areaItem={item} />
+        ))
+      }
+    </ul>
   );
 }
