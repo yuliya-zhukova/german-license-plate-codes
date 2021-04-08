@@ -37,7 +37,7 @@ export default function App() {
         value={newInput}
       />
       {
-        newInput && <AreaList list={areaFilterableList} />
+        newInput && <AreaList list={areaFilterableList} match={newInput} />
       }
     </div>
   );

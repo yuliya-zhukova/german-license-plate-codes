@@ -20,6 +20,11 @@
   &__code {
     width: 25%;
     text-align: left;
+
+    &_match {
+      font-weight: bold;
+      text-transform: uppercase;
+    }
   }
 
   &__link {
