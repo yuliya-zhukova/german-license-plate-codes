@@ -8,7 +8,7 @@
   }
 
   &__list {
-    padding: 20px 0;
+    padding: 20px 5px;
   }
 
   &__item {
@@ -19,12 +19,12 @@
   }
 
   &__code {
+    font-family: 'EuroPlate', sans-serif;
     width: 70px;
     min-width: 70px;
     text-align: left;
 
     &_match {
-      font-family: 'EuroPlate', sans-serif;
       font-weight: bold;
       text-transform: uppercase;
     }
@@ -51,7 +51,7 @@
     }
 
     &__list {
-      padding-left: 70px;
+      padding-left: 50px;
     }
   }
 }
