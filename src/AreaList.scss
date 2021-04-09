@@ -1,37 +1,57 @@
 .area {
   margin: 50px auto;
+  color: #333;
 
   &__title {
     display: none;
     margin-bottom: 40px;
   }
 
+  &__list {
+    padding: 20px 5px;
+  }
+
   &__item {
-    text-align: left;
-    background-color: #fff;
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+    font-size: 24px;
   }
 
   &__code {
-    width: 30%;
+    font-family: 'EuroPlate', sans-serif;
+    width: 70px;
+    min-width: 70px;
+    text-align: left;
+
+    &_match {
+      font-weight: bold;
+      text-transform: uppercase;
+    }
   }
 
   &__link {
-    color: #000;
+    color: #333;
 
     &:hover {
-      color: #000;
+      color: #039;
+      text-decoration: none;
     }
   }
 }
 
 @media (min-width: 1000px) {
   .area {
-    max-width: 900px;
+    max-width: 524px;
     margin-top: 100px auto;
 
     &__title {
       display: block;
       text-align: center;
+    }
+
+    &__list {
+      padding-left: 50px;
     }
   }
 }

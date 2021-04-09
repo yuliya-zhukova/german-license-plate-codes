@@ -2,17 +2,23 @@ import { AreaItem } from './types';
 
 interface AreaListItemProps {
   areaItem: AreaItem;
+  match: string;
 }
 
 export default function AreaListItem(props: AreaListItemProps) {
-  const { areaItem } = props;
+  const { areaItem, match } = props;
+
+  const num = match.split('').length;
 
   return (
-    <tr className="area__item">
-      <td className="area__code">
-        {areaItem.code}
-      </td>
-      <td className="area__name">
+    <li className="area__item">
+      <div className="area__code">
+        <span className="area__code_match">
+          {match}
+        </span>
+        {areaItem.code.substr(num)}
+      </div>
+      <div className="area__name">
         <a
           href={`https://en.wikipedia.org/wiki/${areaItem.name}`}
           target="_blank"
@@ -21,7 +27,7 @@ export default function AreaListItem(props: AreaListItemProps) {
         >
           {areaItem.name}
         </a>
-      </td>
-    </tr>
+      </div>
+    </li>
   );
 }
