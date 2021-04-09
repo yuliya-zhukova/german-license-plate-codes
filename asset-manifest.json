@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/german-license-plate-codes/static/css/main.39f5f17e.chunk.css",
-    "main.js": "/german-license-plate-codes/static/js/main.0d51a32d.chunk.js",
-    "main.js.map": "/german-license-plate-codes/static/js/main.0d51a32d.chunk.js.map",
+    "main.css": "/german-license-plate-codes/static/css/main.1686c95a.chunk.css",
+    "main.js": "/german-license-plate-codes/static/js/main.09223aae.chunk.js",
+    "main.js.map": "/german-license-plate-codes/static/js/main.09223aae.chunk.js.map",
     "runtime-main.js": "/german-license-plate-codes/static/js/runtime-main.6e2d34a0.js",
     "runtime-main.js.map": "/german-license-plate-codes/static/js/runtime-main.6e2d34a0.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/german-license-plate-codes/static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.1da0f68e.chunk.js": "/german-license-plate-codes/static/js/2.1da0f68e.chunk.js",
-    "static/js/2.1da0f68e.chunk.js.map": "/german-license-plate-codes/static/js/2.1da0f68e.chunk.js.map",
+    "static/js/2.ca52655b.chunk.js": "/german-license-plate-codes/static/js/2.ca52655b.chunk.js",
+    "static/js/2.ca52655b.chunk.js.map": "/german-license-plate-codes/static/js/2.ca52655b.chunk.js.map",
     "index.html": "/german-license-plate-codes/index.html",
     "static/css/2.4c97ca4f.chunk.css.map": "/german-license-plate-codes/static/css/2.4c97ca4f.chunk.css.map",
-    "static/css/main.39f5f17e.chunk.css.map": "/german-license-plate-codes/static/css/main.39f5f17e.chunk.css.map",
-    "static/js/2.1da0f68e.chunk.js.LICENSE.txt": "/german-license-plate-codes/static/js/2.1da0f68e.chunk.js.LICENSE.txt",
+    "static/css/main.1686c95a.chunk.css.map": "/german-license-plate-codes/static/css/main.1686c95a.chunk.css.map",
+    "static/js/2.ca52655b.chunk.js.LICENSE.txt": "/german-license-plate-codes/static/js/2.ca52655b.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/german-license-plate-codes/static/media/EuroPlate.a2ce9461.ttf",
     "static/media/SearchField.scss": "/german-license-plate-codes/static/media/flag-of-europe-stars.16e34e5a.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.6e2d34a0.js",
     "static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.1da0f68e.chunk.js",
-    "static/css/main.39f5f17e.chunk.css",
-    "static/js/main.0d51a32d.chunk.js"
+    "static/js/2.ca52655b.chunk.js",
+    "static/css/main.1686c95a.chunk.css",
+    "static/js/main.09223aae.chunk.js"
   ]
 }
