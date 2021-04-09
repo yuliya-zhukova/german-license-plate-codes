@@ -11,7 +11,11 @@ export default function App() {
   const [newInput, setNewInput] = useState('');
 
   function searchArea(value: string) {
-    setNewInput(value);
+    const regExLettersOnly = /^[a-zA-ZäÄöÖüÜ]*$/;
+
+    if (regExLettersOnly.test(value)) {
+      setNewInput(value);
+    }
   }
 
   function objectToArray(obj: any): AreaItem[] {
