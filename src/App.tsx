@@ -34,7 +34,7 @@ export default function App() {
       <h1 className="area__title">German license plate codes</h1>
       <SearchField
         handleInput={searchArea}
-        value={newInput}
+        newValue={newInput}
       />
       {
         newInput && <AreaList list={areaFilterableList} match={newInput} />

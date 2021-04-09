@@ -1,6 +1,11 @@
 import './SearchField.scss';
 
-export default function SearchField(props: any) {
+interface SearchFieldProps {
+  newValue: string;
+  handleInput: (value: string) => void;
+}
+
+export default function SearchField(props: SearchFieldProps) {
   const { newValue } = props;
 
   function getInput(event: any): void {
