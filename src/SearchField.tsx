@@ -1,3 +1,4 @@
+import { ChangeEvent } from 'react';
 import './SearchField.scss';
 
 interface SearchFieldProps {
@@ -8,7 +9,7 @@ interface SearchFieldProps {
 export default function SearchField(props: SearchFieldProps) {
   const { newValue } = props;
 
-  function getInput(event: any): void {
+  function getInput(event: ChangeEvent<HTMLInputElement>): void {
     const { value } = event.target;
 
     props.handleInput(value);
