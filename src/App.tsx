@@ -11,7 +11,7 @@ export default function App() {
   const [newInput, setNewInput] = useState('');
 
   function searchArea(value: string) {
-    const regExLettersOnly = /^[a-zA-ZäÄöÖüÜ]*$/;
+    const regExLettersOnly = /^[a-zA-ZäÄöÖüÜ]*$/; // there is no ß in the code
 
     if (regExLettersOnly.test(value)) {
       setNewInput(value);
