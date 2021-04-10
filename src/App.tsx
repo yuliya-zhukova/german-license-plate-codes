@@ -11,7 +11,11 @@ export default function App() {
   const [newInput, setNewInput] = useState('');
 
   function searchArea(value: string) {
-    setNewInput(value);
+    const regExLettersOnly = /^[a-zA-ZäÄöÖüÜ]*$/; // there is no ß in the code
+
+    if (regExLettersOnly.test(value)) {
+      setNewInput(value);
+    }
   }
 
   function objectToArray(obj: any): AreaItem[] {
@@ -34,7 +38,7 @@ export default function App() {
       <h1 className="area__title">German license plate codes</h1>
       <SearchField
         handleInput={searchArea}
-        value={newInput}
+        newValue={newInput}
       />
       {
         newInput && <AreaList list={areaFilterableList} match={newInput} />
