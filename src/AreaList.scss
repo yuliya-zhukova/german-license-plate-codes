@@ -38,6 +38,17 @@
       text-decoration: none;
     }
   }
+
+  &__message {
+    width: 100%;
+    margin-top: 100px;
+    padding: 10px;
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+    background-color: #039;
+    border-radius: 10px;
+  }
 }
 
 @media (min-width: 1000px) {
