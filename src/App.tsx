@@ -36,7 +36,7 @@ export default function App() {
   return (
     <div className="area">
       <div className="area__header">
-        <h1 className="area__title">German license plate codes</h1>
+        <h1 className="area__title">German License Plate Codes</h1>
         <SearchField
           handleInput={searchArea}
           newValue={newInput}
