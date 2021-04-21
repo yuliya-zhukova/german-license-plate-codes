@@ -43,18 +43,17 @@ export default function App() {
         />
       </div>
       {
-        areaFilterableList.length === 0 && (
-        <div className="area__message">
-          Sorry, code
-          {' '}
-          <span className="area__code area__code_match">{newInput}</span>
-          {' '}
-          does not exist in Germany
-        </div>
+        areaFilterableList.length === 0 ? (
+          <div className="area__message">
+            Sorry, code
+            {' '}
+            <span className="area__code area__code_match">{newInput}</span>
+            {' '}
+            does not exist in Germany
+          </div>
+        ) : (
+          newInput && <AreaList list={areaFilterableList} match={newInput} />
         )
-      }
-      {
-        newInput && <AreaList list={areaFilterableList} match={newInput} />
       }
     </div>
   );
