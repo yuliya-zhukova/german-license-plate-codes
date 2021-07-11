@@ -1,26 +1,60 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import germanLicensePlatePrefixes from 'german-license-plate-prefixes';
+import { useState } from 'react';
 
-function App() {
+import AreaList from './AreaList';
+import SearchField from './SearchField';
+import { AreaItem } from './types';
+
+import './App.scss';
+
+export default function App() {
+  const [newInput, setNewInput] = useState('');
+
+  function searchArea(value: string) {
+    const regExLettersOnly = /^[a-zA-ZäÄöÖüÜ]*$/; // there is no ß in the code
+
+    if (regExLettersOnly.test(value)) {
+      setNewInput(value);
+    }
+  }
+
+  function objectToArray(obj: any): AreaItem[] {
+    return Object.keys(obj).map((key) => ({
+      code: key,
+      name: obj[key]
+    }));
+  }
+
+  const areaList = objectToArray(germanLicensePlatePrefixes);
+
+  const areaSortList = areaList.sort((a: AreaItem, b: AreaItem) => (a.code > b.code ? 1 : -1));
+
+  const newCode = new RegExp(`^${newInput}`, 'i');
+
+  const areaFilterableList = areaSortList.filter((item: AreaItem) => newCode.test(item.code));
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="area">
+      <div className="area__header">
+        <h1 className="area__title">German License Plate Codes</h1>
+        <SearchField
+          handleInput={searchArea}
+          newValue={newInput}
+        />
+      </div>
+      {
+        areaFilterableList.length === 0 ? (
+          <div className="area__message">
+            Sorry, code
+            {' '}
+            <span className="area__code area__code_match">{newInput}</span>
+            {' '}
+            does not exist in Germany
+          </div>
+        ) : (
+          newInput && <AreaList list={areaFilterableList} match={newInput} />
+        )
+      }
     </div>
   );
 }
-
-export default App;

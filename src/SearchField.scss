@@ -1,0 +1,92 @@
+$top-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+
+.plate {
+  width: 100%;
+  padding: 2px;
+  border-radius: 12px;
+  margin: 20px auto 30px;
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15), 0 22px 30px rgba(0, 0, 0, 0.25);
+
+  &__top {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 75px;
+    border: 2px solid #222;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: $top-shadow;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+      pointer-events: none;
+      border-radius: 7px;
+      box-shadow: inset $top-shadow;
+    }
+  }
+
+  &__eu {
+    position: relative;
+    width: 15%;
+    height: 100%;
+    color: #fff;
+    padding-top: 39px;
+    text-align: center;
+    font-size: 20px;
+    background-color: #039;
+    background-image: url('./images/flag-of-europe-stars.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 6px;
+    background-size: 120%;
+  }
+
+  &__input {
+    font-family: 'EuroPlate', sans-serif;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #222;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    padding: 0 0 0 10px;
+    font-size: 72px;
+    text-transform: uppercase;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+
+    &::placeholder {
+      color: #ccc;
+      text-shadow: none;
+    }
+  }
+}
+
+@media (min-width: 500px) {
+  .plate {
+    width: 524px;
+
+    &__top {
+      height: 100px;
+    }
+
+    &__eu {
+      min-width: 45px;
+      max-width: 45px;
+      padding-top: 52px;
+      font-size: 24px;
+      background-position: 50% 9px;
+      background-size: 140%;
+    }
+
+    &__input {
+      font-size: 96px;
+    }
+  }
+}
