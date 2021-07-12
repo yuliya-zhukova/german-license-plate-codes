@@ -33,9 +33,22 @@
   },
   "eslintConfig": {
     "extends": [
+      "airbnb-typescript",
       "react-app",
       "react-app/jest"
-    ]
+    ],
+    "parserOptions": {
+      "project": "./tsconfig.json"
+    },
+    "rules": {
+      "@typescript-eslint/comma-dangle": [
+        "error",
+        "never"
+      ],
+      "linebreak-style": "off",
+      "react/react-in-jsx-scope": "off",
+      "no-console": "warn"
+    }
   },
   "browserslist": {
     "production": [
