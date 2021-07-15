@@ -62,7 +62,7 @@
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 500px) {
   .area {
     max-width: 524px;
     margin-top: 100px;
@@ -74,6 +74,7 @@
     &__title {
       display: block;
       text-align: center;
+      font-size: 2rem;
     }
 
     &__list {
