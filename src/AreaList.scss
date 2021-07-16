@@ -62,9 +62,8 @@
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 500px) {
   .area {
-    max-width: 524px;
     margin-top: 100px;
 
     &__header {
@@ -74,10 +73,12 @@
     &__title {
       display: block;
       text-align: center;
+      font-size: 2rem;
     }
 
     &__list {
-      padding-left: 50px;
+      width: 460px;
+      margin: 0 auto;
     }
   }
 }
