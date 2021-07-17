@@ -25,6 +25,12 @@
     margin-bottom: 100px;
   }
 
+  &__footer {
+    flex: 0 0 auto;
+    height: 100px;
+    display: none;
+  }
+
   &__item {
     width: 100%;
     display: flex;
@@ -79,6 +85,10 @@
     &__list {
       width: 460px;
       margin: 0 auto;
+    }
+
+    &__footer {
+      display: block;
     }
   }
 }
