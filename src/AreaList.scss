@@ -8,7 +8,7 @@
   padding-bottom: 100px;
 
   &__header {
-    flex: 0;
+    flex: 0 0 auto;
     padding-top: 0;
     background-color: #fff;
   }
@@ -18,7 +18,7 @@
   }
 
   &__list {
-    flex: 1;
+    flex: 1 0;
     width: 100%;
     overflow-y: auto;
     padding: 20px 5px;
@@ -27,8 +27,18 @@
 
   &__footer {
     flex: 0 0 auto;
-    height: 100px;
+    position: relative;
+    height: 70px;
     display: none;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -70px;
+      width: 100%;
+      height: 70px;
+      background-image: linear-gradient(transparent, #fff);
+    }
   }
 
   &__item {
