@@ -95,6 +95,12 @@
     &__list {
       width: 460px;
       margin: 0 auto;
+      padding-bottom: 50px;
+    }
+
+    &__item {
+      margin-bottom: 10px;
+      font-size: 20px;
     }
 
     &__footer {
