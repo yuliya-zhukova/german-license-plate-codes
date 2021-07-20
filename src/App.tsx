@@ -55,6 +55,9 @@ export default function App() {
           newInput && <AreaList list={areaFilterableList} match={newInput} />
         )
       }
+      {
+        areaFilterableList.length !== 0 && newInput && <div className="area__footer" />
+      }
     </div>
   );
 }
