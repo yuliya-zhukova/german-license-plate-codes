@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/german-license-plate-codes/static/css/main.1a082ed7.chunk.css",
-    "main.js": "/german-license-plate-codes/static/js/main.19eb39c6.chunk.js",
-    "main.js.map": "/german-license-plate-codes/static/js/main.19eb39c6.chunk.js.map",
+    "main.css": "/german-license-plate-codes/static/css/main.3733f618.chunk.css",
+    "main.js": "/german-license-plate-codes/static/js/main.44da8779.chunk.js",
+    "main.js.map": "/german-license-plate-codes/static/js/main.44da8779.chunk.js.map",
     "runtime-main.js": "/german-license-plate-codes/static/js/runtime-main.447cf088.js",
     "runtime-main.js.map": "/german-license-plate-codes/static/js/runtime-main.447cf088.js.map",
     "static/css/2.4be38407.chunk.css": "/german-license-plate-codes/static/css/2.4be38407.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.bc00bd79.chunk.js.map": "/german-license-plate-codes/static/js/2.bc00bd79.chunk.js.map",
     "index.html": "/german-license-plate-codes/index.html",
     "static/css/2.4be38407.chunk.css.map": "/german-license-plate-codes/static/css/2.4be38407.chunk.css.map",
-    "static/css/main.1a082ed7.chunk.css.map": "/german-license-plate-codes/static/css/main.1a082ed7.chunk.css.map",
+    "static/css/main.3733f618.chunk.css.map": "/german-license-plate-codes/static/css/main.3733f618.chunk.css.map",
     "static/js/2.bc00bd79.chunk.js.LICENSE.txt": "/german-license-plate-codes/static/js/2.bc00bd79.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/german-license-plate-codes/static/media/EuroPlate.a2ce9461.ttf",
     "static/media/SearchField.scss": "/german-license-plate-codes/static/media/flag-of-europe-stars.16e34e5a.svg"
@@ -19,7 +19,7 @@
     "static/js/runtime-main.447cf088.js",
     "static/css/2.4be38407.chunk.css",
     "static/js/2.bc00bd79.chunk.js",
-    "static/css/main.1a082ed7.chunk.css",
-    "static/js/main.19eb39c6.chunk.js"
+    "static/css/main.3733f618.chunk.css",
+    "static/js/main.44da8779.chunk.js"
   ]
 }
